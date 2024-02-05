@@ -264,6 +264,53 @@
 # hello(name, second_name)
 
 #---------------------------------------return statements-----------------------
-def multiply(num1, num2):
-    return num1 * num2
-print(multiply(5, 10))
+# def multiply(num1, num2):
+#     return num1 * num2
+# print(multiply(5, 10))
+
+#----------------------------------------keyword arguments------------------------
+# def hello(first, middle, last):
+#     print("Hello "+first+" "+middle+" "+last)
+# hello(last="code",first="Bro",middle="Dude")
+
+#-----------------------------------------nested function calls---------------------
+# print(round(abs(float(input("Enter a whole positive number: ")))))
+
+#-----------------------------------------scope-------------------------------------
+# name = "bro"#global scope
+# last_name = "code"
+# def display():
+#     last_name = "babu"#local scope
+#     print(name+" "+last_name)
+# display()
+# print(name+" "+last_name)
+
+#---------------------------------*args------------------------------
+#    parameter that will pack all arguments into a tuple
+#    function can accept varying amount of arguments
+# def add(*args):
+#     sum = 0
+#     args = list(args)
+#     args[0] = 0
+#     for i in args:
+#         sum+=i
+#     return sum
+#
+# print(add(1,2,3,4,5))
+
+#----------------------------------------**kwargs----------------------------------
+#   parameter that will pack all the arguments in a dictionary
+
+#----------------------------------------walrus operator :=------------------------
+# foods = list()
+# while food := input("What food do you like?: ") != "quit":
+#     foods.append(food)
+
+#----------------------------------------Assign function to a variable------------------------
+# def hello():
+#     print("Hello")
+# hi = hello
+# hi()
+#
+# say = print
+# say("Whoa! I can't believe this works! ")
